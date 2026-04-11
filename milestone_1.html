@@ -6,7 +6,7 @@
     <title>milestone_1 | Wheel-A-Way!</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -21,7 +21,7 @@
             <img class="site-logo" src="assets/wheelie-transparent.png" alt="Wheel-A-Way logo" />
           </a>
           <div class="brand-text">
-            <p class="eyebrow">EECS 440 Project</p>
+            <p class="eyebrow">A VR Experience</p>
             <h1>Wheel-A-Way!</h1>
           </div>
         </div>
@@ -29,24 +29,16 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#upcoming-features">Upcoming Features</a></li>
+          <li><a href="upcoming_features.html">Upcoming Features</a></li>
+          <li><a href="devlog.html">Devlog</a></li>
           <li class="nav-item-dropdown">
-            <a href="#devlog" aria-haspopup="true">Devlog</a>
-            <ul class="dropdown-menu" aria-label="Devlog milestones">
-              <li><a href="milestone_1.html">milestone_1</a></li>
-              <li><a href="milestone_2.html">milestone_2</a></li>
-              <li><a href="alpha.html">alpha</a></li>
-              <li><a href="gold.html">gold</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-dropdown">
-            <a href="#playtest-reports" aria-haspopup="true">Playtest Reports</a>
+            <a href="playtest1.html" aria-haspopup="true">Playtest Reports</a>
             <ul class="dropdown-menu" aria-label="Playtest report pages">
               <li><a href="playtest1.html">playtest1</a></li>
               <li><a href="playtest2.html">playtest2</a></li>
-              <li><a href="playtest3.html">playtest3</a></li>
+              <!-- <li><a href="playtest3.html">playtest3</a></li>
               <li><a href="playtest4.html">playtest4</a></li>
-              <li><a href="playtest5.html">playtest5</a></li>
+              <li><a href="playtest5.html">playtest5</a></li> -->
             </ul>
           </li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -58,37 +50,29 @@
       <section class="glass section">
         <p class="eyebrow">Devlog</p>
         <h1>milestone_1</h1>
-        <p class="section-intro">
-          Placeholder page—add content when ready.
-
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
-        </p>
-        <p><a href="index.html#devlog">← Back to home</a></p>
+        <div class="video-embed-wrap">
+          <iframe
+            title="Wheel-A-Way project video"
+            src="https://www.youtube.com/embed/TqfIcUCK7Ow"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-description">
+          <p>
+            This week's development was primarily focused on getting our idea straight. We decided on what we wanted to build and what experience we wanted the user to have. We
+            designed the experiences of five levels on a piece of paper to ensure a clear vision for the product before we start development.
+          </p>
+          <p>
+            The 2nd half of the week was spent on designing the world. Getting all five levels to look the way we wanted and have all the elements we would need for the level design.
+            Then we focused on implementing the lobby and the first level, which is pretty minimal. We have a different vision for how we want to restrict the users' movement, but
+            for now, we're using unreal engine's default snap-turning and teleportation method for moving around.
+          </p>
+          <p>
+            The first level's design includes finding a grabber arm to reach a key, which will grant access to level 2. Pretty minimal for now, but we have far more challenging and a
+            variety of wheelchair experiences planned for future levels. But first, we want to nail the wheelchair movement for milestone 2.
+          </p>
+        </div>
       </section>
     </main>
   </body>

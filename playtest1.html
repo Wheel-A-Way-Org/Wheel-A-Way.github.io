@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Damion&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -25,7 +25,7 @@
             <img class="site-logo" src="assets/wheelie-transparent.png" alt="Wheel-A-Way logo" />
           </a>
           <div class="brand-text">
-            <p class="eyebrow">EECS 440 Project</p>
+            <p class="eyebrow">A VR Experience</p>
             <h1>Wheel-A-Way!</h1>
           </div>
         </div>
@@ -33,24 +33,16 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#upcoming-features">Upcoming Features</a></li>
+          <li><a href="upcoming_features.html">Upcoming Features</a></li>
+          <li><a href="devlog.html">Devlog</a></li>
           <li class="nav-item-dropdown">
-            <a href="#devlog" aria-haspopup="true">Devlog</a>
-            <ul class="dropdown-menu" aria-label="Devlog milestones">
-              <li><a href="milestone_1.html">milestone_1</a></li>
-              <li><a href="milestone_2.html">milestone_2</a></li>
-              <li><a href="alpha.html">alpha</a></li>
-              <li><a href="gold.html">gold</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-dropdown">
-            <a href="#playtest-reports" aria-haspopup="true">Playtest Reports</a>
+            <a href="playtest1.html" aria-haspopup="true">Playtest Reports</a>
             <ul class="dropdown-menu" aria-label="Playtest report pages">
               <li><a href="playtest1.html">playtest1</a></li>
               <li><a href="playtest2.html">playtest2</a></li>
-              <li><a href="playtest3.html">playtest3</a></li>
+              <!-- <li><a href="playtest3.html">playtest3</a></li>
               <li><a href="playtest4.html">playtest4</a></li>
-              <li><a href="playtest5.html">playtest5</a></li>
+              <li><a href="playtest5.html">playtest5</a></li> -->
             </ul>
           </li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -59,11 +51,127 @@
     </header>
     
     <main class="layout" style="margin-top: 2rem">
-      <section class="glass section">
+      <section class="glass section playtest-report">
         <p class="eyebrow">Playtest Reports</p>
         <h1>playtest1</h1>
-        <p class="section-intro">Placeholder page-add content when ready.</p>
-        <p><a href="index.html#playtest-reports">← Back to home</a></p>
+        <p class="section-intro">
+          <strong>Team 5 -</strong> <em>EscapeVRoom</em> playtesting with <strong>Team 6 -</strong> <em>ARC (Michigan AR Companion)</em> on <strong>04/05/26</strong> at VisLab
+        </p>
+
+        <p class="q"><strong><em>Briefly describe the current state of your product / website.</em></strong></p>
+        <p>
+          The website currently doesn't appeal to the customer much. The front page has very little information about the product itself, other than an overview of what it is.
+          It needs to include more specifics.
+        </p>
+        <p>
+          The product is at a pretty decent state. The wheelchair movements are somewhat simulated. Instead of users rowing the wheels of the wheelchair, it's just two switches
+          they can hold on to on either side of the chair to turn/move forward. Teleporting and snap turning are disabled.
+        </p>
+
+        <p class="q"><strong><em>Describe what you hope to see during this playtest.</em></strong></p>
+        <p>
+          We want to see whether the testers can figure out what to do and if the tasks are obvious to them. We don't have any in-game instructions yet, so this will tell us what
+          level of hand-holding we need to do in game. We also wanna see any exceptions or janky game movements the users come across and address those later on.
+        </p>
+
+        <h2>After they playtest our product…</h2>
+
+        <p class="q"><strong><em>Describe how the playtest proceeded. What did the users do?</em></strong></p>
+        <p>
+          First we showed them our website so that the users could get an idea of what we might be trying to achieve through our product. Currently, we have no text within the
+          game, so it's not a super intuitive thing for someone to be able to understand what to do. Next, we let them get in the game and try to explore and figure out what to do
+          while making use of the wheel chair movements. There were some issues with things that they were trying to do that we noted down and actually helped us a lot to identify
+          problems that we didn't see. They each went for a turn through the lobby and entered level 1, attempting to escape to the next level finding the key.
+        </p>
+
+        <p class="q">
+          <strong><em>Was the product / website's purpose intuitive? Did users appear confused at any point?</em></strong>
+        </p>
+        <p>
+          It wasn't intuitive AT ALL. Our website is not bad and has decent explanations about what to expect in the experience overall, but when they were in the actual
+          experience, it was very confusing for them, which was expected. They were confused about how the movement worked as the snap turning and teleporting they're used to was
+          disabled. But once we verbally gave them the hint that they're in a wheelchair and expect it to behave like one, they immediately started to try the rowing motion with
+          their controller. I think we made a good choice to make holding the chair the grab button instead of the trigger since that's the one they intuitively used. Some people
+          were also confused on what items to interact with.
+        </p>
+
+        <p class="q"><strong><em>What kind of things did the users say while interacting?</em></strong></p>
+        <p>
+          Some of the things they relayed to us while interacting with our product is how cool the movement is and how it's really a unique idea. However, they also said some
+          things about things not necessarily working, for example, we want you to be able to pick up items and place them in your lap while having to hold the wheels to move,
+          however the item just fell through their lap at that moment. This made the game much more difficult for them and they clearly conveyed that which we understood!
+        </p>
+
+        <p class="q">
+          <strong><em>In its current state, in what ways (big or small) is the product / website succeeding?</em></strong>
+        </p>
+        <p>
+          I think the idea of our product is very sound and really unique. Similarly, because the idea is so cool, some implementation features like the movement are really cool
+          and we feel really proud about that. I think we have good ideas and good designs for the first level as well.
+        </p>
+
+        <p class="q">
+          <strong><em>In its current state, in what ways (big or small) is the product / website falling short?</em></strong>
+        </p>
+        <p>
+          I think just the fact that our product is only in the milestone phase really is what is setting us back and making it fall short. We haven't had enough time to perfect
+          small things and make them feel natural, like the movement being rolling based versus just holding it down. There are definitely some bugs like the navmesh randomly
+          breaking or the fact that we don't have any text that can be used to explain to users what they need to do within a specific level or an introduction in the lobby.
+          Similarly, we don't have all of the levels done so right now there is no definitive end to the game where it feels like you accomplished something, but rather like an
+          "oh that's it?" sort of a feel.
+        </p>
+        <p>
+          The website also needs a lot of work. We need to appeal to the two audiences we're building this for (companies doing studies on employee behavior and schools). Currently,
+          it's just an "Oh, wanna have this cool experience? Try this out!" sort of message, which needs to be added upon.
+        </p>
+
+        <p class="q"><strong><em>In what areas will you invest your time this week?</em></strong></p>
+        <p>
+          This week we are going to invest a lot of our time into working towards perfecting the movement and making sure all of the foundational features for making the levels
+          work is in place. Specifically, the movement and text that appears on the screen or through interacting with the NPC's that will allow for users to have an intuitive
+          experience within the product/game.
+        </p>
+        <p>
+          The second thing we want to really focus on is designing the levels with more details. What sort of experience do we want the users to face that make them go "huh, I
+          guess wheelchair people can't just do that", and fully flush out the level designs so that implementation later is easier.
+        </p>
+        <p>
+          I think we could also touch up the design aspect a bit, possibly making it less of a brick theme and maybe having each level themed on something specific.
+        </p>
+
+        <h2>After we playtest their product…</h2>
+
+        <p class="q"><strong><em>Describe the other team's product / website.</em></strong></p>
+        <p>
+          The other team's product was sort of an interactive iClicker that had a shop with a companion that you could interact with and would hopefully give you motivation to use
+          your phone wisely while in class. This could potentially reward you for doing well in class and allow you to show off this cool companion and work towards buying items
+          from a shop. We really liked the idea of gamifying learning this way. Having a something like this you can build up over time is a really good incentive for showing up to
+          lecture and paying attention. It's a very marketable app. However, and they were aware of this too, the use of AR isn't super necessary for their product yet. So we gave
+          them some ideas.
+        </p>
+        <p>
+          We thought that it would be cool to use the image tracking from p2 to extend this in more of an AR realm. We also told them that they could also have a study mode where
+          you could have a flashcard mode to study your own problem sets. Getting questions correct within this study mode would allow you to earn more coins and buy more items from
+          the shop, maybe cooler companions or even items to customize your companion. This would allow them to remove some restriction on the app only being used in a lecture
+          hall.
+        </p>
+
+        <p class="q">
+          <strong><em>Do you think this product / website addresses the five criteria for P3 success?</em></strong>
+        </p>
+        <p>
+          I think that the product definitely had some bugs, and wasn't necessarily fully implemented. However, I think all of the foundational functions were there and were able
+          to fully showcase what they were going for as a project through milestones. There are definitely apps similar to this, but none that I know of that implements AR and
+          allows you to get a companion. I think that this idea is pretty novel because it can give you a cool companion that would motivate you to study and you can consistently
+          see it grow up. Similar to the last statement, this can be used to motivate students to work harder in the classroom and push students to want to improve their
+          companion in turn making them perform better in school. Currently, I think their biggest downside is the AR aspect, however, viewing the companion in AR space is a good
+          start. I think that if they have to scan questions using the image tracking to gain access and being able to test out different items on their companion through the shop,
+          this could use AR maximally. I think this is very financially sustainable because if a school or schools start using this product then tons of students could get this app
+          and it would be very marketable to other schools (and universities have a lot of money, so we think they're all set on that department). Every student in school is just
+          trying to be as cool as the next student, so if they see students building up a companion and flexing it then everyone will want them. Overall, I think they touched on
+          every criteria for p3 success, but could use a bit more work implementing the AR functionality. However, I don't necessarily think their idea doesn't allow for AR success
+          which is why I really enjoy this product!!
+        </p>
       </section>
     </main>
   </body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devlog | Wheel-A-Way!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-blur bg-1"></div>
+    <div class="background-blur bg-2"></div>
+
+    <header class="glass site-header">
+      <div class="logo-wrap">
+        <div class="brand-row">
+          <a href="index.html">
+            <img class="site-logo" src="assets/wheelie-transparent.png" alt="Wheel-A-Way logo" />
+          </a>
+          <div class="brand-text">
+            <p class="eyebrow">A VR Experience</p>
+            <h1>Wheel-A-Way!</h1>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="upcoming_features.html">Upcoming Features</a></li>
+          <li><a href="devlog.html">Devlog</a></li>
+          <li class="nav-item-dropdown">
+            <a href="playtest1.html" aria-haspopup="true">Playtest Reports</a>
+            <ul class="dropdown-menu" aria-label="Playtest report pages">
+              <li><a href="playtest1.html">playtest1</a></li>
+              <li><a href="playtest2.html">playtest2</a></li>
+              <!-- <li><a href="playtest3.html">playtest3</a></li>
+              <li><a href="playtest4.html">playtest4</a></li>
+              <li><a href="playtest5.html">playtest5</a></li> -->
+            </ul>
+          </li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="layout" style="margin-top: 2rem">
+      <section class="glass section devlog-section">
+        <p class="eyebrow">Build history</p>
+        <h1>Devlog</h1>
+        <p class="section-intro">Milestones and releases—click a card to open the full entry.</p>
+        <div class="timeline-wrap">
+          <ul class="timeline">
+            <li class="timeline-item timeline-item--media-left">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <a class="timeline-row" href="alpha.html">
+                <div class="timeline-card glass">
+                  <div class="timeline-thumb">
+                    <img src="assets/livingroom.png" alt="alpha image" />
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-name">alpha</span>
+                  <time class="timeline-date" datetime="2026-05-01">April 13, 2026</time>
+                </div>
+              </a>
+            </li>
+
+            <li class="timeline-item timeline-item--media-right">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <a class="timeline-row" href="milestone_2.html">
+                <div class="timeline-card glass">
+                  <div class="timeline-thumb">
+                    <img src="assets/milestone-2.png" alt="milestone_2 image" />
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-name">milestone_2</span>
+                  <time class="timeline-date" datetime="2026-03-15">April 6, 2026</time>
+                </div>
+              </a>
+            </li>
+
+            <li class="timeline-item timeline-item--media-left">
+              <span class="timeline-dot" aria-hidden="true"></span>
+              <a class="timeline-row" href="milestone_1.html">
+                <div class="timeline-card glass">
+                  <div class="timeline-thumb">
+                    <img src="assets/milestone-1.png" alt="milestone_1 image" />
+                  </div>
+                </div>
+                <div class="timeline-meta">
+                  <span class="timeline-name">milestone_1</span>
+                  <time class="timeline-date" datetime="2026-02-01">March 30, 2026</time>
+                </div>
+              </a>
+            </li>
+
+            <!-- <li class="timeline-item timeline-item--media-right"> -->
+            <!--   <span class="timeline-dot" aria-hidden="true"></span> -->
+            <!--   <a class="timeline-row" href="gold.html"> -->
+            <!--     <div class="timeline-card glass"> -->
+            <!--       <div class="timeline-thumb"> -->
+            <!--         <img src="assets/rocketship.jpeg" alt="gold image" /> -->
+            <!--       </div> -->
+            <!--     </div> -->
+            <!--     <div class="timeline-meta"> -->
+            <!--       <span class="timeline-name">gold</span> -->
+            <!--       <time class="timeline-date" datetime="2026-06-20">June 20, 2026</time> -->
+            <!--     </div> -->
+            <!--   </a> -->
+            <!-- </li> -->
+          </ul>
+        </div>
+        <br>
+        <br>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Wheel-A-Way. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

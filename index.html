@@ -6,7 +6,7 @@
     <title>Wheel-A-Way! | VR Escape Room</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,7 +20,7 @@
             <img class="site-logo" src="assets/wheelie-transparent.png" alt="Wheel-A-Way logo" />
           </a>
           <div class="brand-text">
-            <p class="eyebrow">EECS 440 Project</p>
+            <p class="eyebrow">A VR Experience</p>
             <h1>Wheel-A-Way!</h1>
           </div>
         </div>
@@ -28,24 +28,16 @@
       <nav aria-label="Main navigation">
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
-          <li><a href="#upcoming-features">Upcoming Features</a></li>
+          <li><a href="upcoming_features.html">Upcoming Features</a></li>
+          <li><a href="devlog.html">Devlog</a></li>
           <li class="nav-item-dropdown">
-            <a href="#devlog" aria-haspopup="true">Devlog</a>
-            <ul class="dropdown-menu" aria-label="Devlog milestones">
-              <li><a href="milestone_1.html">milestone_1</a></li>
-              <li><a href="milestone_2.html">milestone_2</a></li>
-              <li><a href="alpha.html">alpha</a></li>
-              <li><a href="gold.html">gold</a></li>
-            </ul>
-          </li>
-          <li class="nav-item-dropdown">
-            <a href="#playtest-reports" aria-haspopup="true">Playtest Reports</a>
+            <a href="playtest1.html" aria-haspopup="true">Playtest Reports</a>
             <ul class="dropdown-menu" aria-label="Playtest report pages">
               <li><a href="playtest1.html">playtest1</a></li>
               <li><a href="playtest2.html">playtest2</a></li>
-              <li><a href="playtest3.html">playtest3</a></li>
+              <!-- <li><a href="playtest3.html">playtest3</a></li>
               <li><a href="playtest4.html">playtest4</a></li>
-              <li><a href="playtest5.html">playtest5</a></li>
+              <li><a href="playtest5.html">playtest5</a></li> -->
             </ul>
           </li>
           <li><a href="pricing.html">Pricing</a></li>
@@ -57,14 +49,25 @@
       <section id="home" class="section hero">
         <article class="hero-banner" role="img" aria-label="Main game hero image">
           <div class="hero-overlay"></div>
-          <h2>Wheel-A-Way!</h2>
+          <div class="hero-banner-text">
+            <h2>Wheel-<span class="title-accent-way">A-Way</span>!</h2>
+            <p class="hero-banner-tagline">Generating empathy through interactable experiences</p>
+          </div>
         </article>
-        <div class="glass hero-description">
+        <div class="glass section">
           <p class="eyebrow">Wheelchair VR Escape Room</p>
           <h3 class="hero-tagline">Sit in the seat of a wheelchair user and race to find Jack's passport before his flight.</h3>
           <p>
             EscapeVRoom is a VR escape-room experience set in Jack's neighborhood and home. You explore room-by-room, solve environment-driven puzzles, and navigate
             barriers from a wheelchair user's perspective to uncover the missing passport in time.
+          </p>
+          <p>
+            EscapeVRoom blends immersive puzzle design with accessibility-centered gameplay. Players are placed in a wheelchair-user perspective while moving through
+            everyday spaces that become challenging when layouts are narrow, obstructed, or not thoughtfully designed.
+          </p>
+          <p>
+            The project originally explored a laser-tag facility concept, but the current narrative pivots to Jack's neighborhood and house to deliver a more grounded story
+            objective: find the passport before departure.
           </p>
           <div class="hero-tags" role="list" aria-label="Game tags">
             <span role="listitem">Narrative Escape Experience</span>
@@ -72,18 +75,6 @@
             <span role="listitem">VR Immersion</span>
           </div>
         </div>
-      </section>
-
-      <section class="glass section">
-        <h2>General Description</h2>
-        <p>
-          EscapeVRoom blends immersive puzzle design with accessibility-centered gameplay. Players are placed in a wheelchair-user perspective while moving through
-          everyday spaces that become challenging when layouts are narrow, obstructed, or not thoughtfully designed.
-        </p>
-        <p>
-          The project originally explored a laser-tag facility concept, but the current narrative pivots to Jack's neighborhood and house to deliver a more grounded story
-          objective: find the passport before departure.
-        </p>
       </section>
 
       <section class="glass section">
@@ -115,18 +106,8 @@
           </article>
         </div>
       </section>
-
-      <section class="glass section mission-section">
-        <h2>Our Mission</h2>
-        <p>
-          EscapeVRoom aims to build empathy and awareness by immersing players in the barriers wheelchair users can face, showing how inaccessible design can turn
-          ordinary spaces into frustrating challenges.
-        </p>
-      </section>
-
-      <section id="screenshots" class="section shots-section">
-        <h2>Screenshots</h2>
-        <p class="section-intro">Scroll to spread the scene cards upward, then scroll back to stack them together again.</p>
+      <section id="features" class="section shots-section">
+        <h2>Features</h2>
         <div class="story-scroll" aria-label="Interactive screenshot story">
           <div class="story-sticky">
             <article class="stack-stage" id="stack-stage">
@@ -164,96 +145,72 @@
         </div>
       </section>
 
-      <section id="devlog" class="glass section devlog-section">
-        <h2>Devlog</h2>
-        <div class="timeline-wrap">
-          <ul class="timeline">
-            <li class="timeline-item timeline-item--left">
-              <span class="timeline-dot" aria-hidden="true"></span>
-              <a class="timeline-node glass" href="milestone-1.html">
-                <div class="timeline-thumb">
-                  <img src="assets/milestone-1.png" alt="milestone_1 image" />
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-name">milestone_1</span>
-                  <time class="timeline-date" datetime="2026-02-01">February 1, 2026</time>
-                </div>
-              </a>
-            </li>
+      
+      <section id="meet-the-team" class="glass section">
+        <p class="eyebrow">People</p>
+        <h2>Meet the Team</h2>
+        <p class="section-intro">The folks building Wheel-A-Way.</p>
 
-            <li class="timeline-item timeline-item--right">
-              <span class="timeline-dot" aria-hidden="true"></span>
-              <a class="timeline-node glass" href="milestone_2.html">
-                <div class="timeline-thumb">
-                  <img src="assets/milestone-2.png" alt="milestone_2 image" />
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-name">milestone_2</span>
-                  <time class="timeline-date" datetime="2026-03-15">March 15, 2026</time>
-                </div>
-              </a>
-            </li>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/rocketship.jpeg" alt="Headshot placeholder for Johnson Johnny" />
+            </div>
+            <p class="team-name">Sarraf Ahmed</p>
+            <div class="team-bio">Add a short bio for this team member: role, focus, and what they bring to the project.</div>
+          </article>
 
-            <li class="timeline-item timeline-item--left">
-              <span class="timeline-dot" aria-hidden="true"></span>
-              <a class="timeline-node glass" href="alpha.html">
-                <div class="timeline-thumb">
-                  <img src="assets/livingroom.png" alt="alpha image" />
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-name">alpha</span>
-                  <time class="timeline-date" datetime="2026-05-01">May 1, 2026</time>
-                </div>
-              </a>
-            </li>
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/rocketship.jpeg" alt="Headshot placeholder for Johnson Johnny" />
+            </div>
+            <p class="team-name">Christian Floyd</p>
+            <div class="team-bio">Add a short bio for this team member: role, focus, and what they bring to the project.</div>
+          </article>
 
-            <!-- <li class="timeline-item timeline-item--right"> -->
-            <!--   <span class="timeline-dot" aria-hidden="true"></span> -->
-            <!--   <a class="timeline-node glass" href="gold.html"> -->
-            <!--     <div class="timeline-thumb"> -->
-            <!--       <img src="assets/rocketship.jpeg" alt="gold image" /> -->
-            <!--     </div> -->
-            <!--     <div class="timeline-meta"> -->
-            <!--       <span class="timeline-name">gold</span> -->
-            <!--       <time class="timeline-date" datetime="2026-06-20">June 20, 2026</time> -->
-            <!--     </div> -->
-            <!--   </a> -->
-            <!-- </li> -->
-          </ul>
+          <article class="team-card">
+            <div class="team-photo">
+              <img src="assets/rocketship.jpeg" alt="Headshot placeholder for Johnson Johnny" />
+            </div>
+            <p class="team-name">Maxwell Homer</p>
+            <div class="team-bio">Add a short bio for this team member: role, focus, and what they bring to the project.</div>
+          </article>
         </div>
       </section>
 
-      <section id="upcoming-features" class="glass section">
-        <h2>Upcoming Features</h2>
-        <p class="section-intro">Planned additions for future milestones:</p>
-        <ul class="list">
-          <li>Laser gun mechanics.</li>
-          <li>Target-based puzzle interactions.</li>
-          <li>More realistic environmental frustrations and barriers.</li>
-          <li>Deeper wheelchair movement systems.</li>
-          <li>Possible wheelchair upgrades.</li>
-          <li>Vertical multi-level puzzle design.</li>
-        </ul>
+      <section id="pricing-cta" class="glass section pricing-cta-section">
+        <h2>Pricing</h2>
+        <p class="section-intro">Personal lifetime access or organization plans—see which fits your classroom, lab, or team.</p>
+        <p class="pricing-cta-actions">
+          <a class="btn-pill-accent" href="pricing.html">View pricing</a>
+        </p>
       </section>
 
-      <section id="playtest-reports" class="glass section">
-        <h2>Playtest Reports</h2>
-        <p class="section-intro">Keep this section format and swap in your current report notes.</p>
-        <div class="entry-list">
-          <article class="entry">
-            <h3>Playtest Session A</h3>
-            <p>Placeholder text for observations, user pain points, and priority follow-up fixes.</p>
-          </article>
-          <article class="entry">
-            <h3>Playtest Session B</h3>
-            <p>Placeholder text for puzzle completion rates, confusion points, and updated design decisions.</p>
-          </article>
-        </div>
+
+      <section id="contact" class="glass section">
+        <p class="eyebrow">Contact</p>
+        <h2>Contact us</h2>
+        <p class="section-intro">Questions, feedback, or partnership ideas? Send us a message.</p>
+        <form class="contact-form" action="mailto:wheelaway440@gmail.com" method="post" enctype="text/plain">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="body" required placeholder="Tell us what's on your mind..."></textarea>
+          </label>
+          <button type="submit">Send message</button>
+        </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Built for immersive accessibility-focused VR design.</p>
+      <p>© 2026 Wheel-A-Way. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>

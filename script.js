@@ -117,3 +117,37 @@ function initTimelineReveal() {
 }
 
 initTimelineReveal();
+
+const p3CriteriaCards = document.querySelectorAll(".p3-criteria-card.reveal-slide");
+
+function initP3CriteriaReveal() {
+  if (!p3CriteriaCards.length) return;
+
+  const reduceMotion =
+    window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (reduceMotion) {
+    p3CriteriaCards.forEach((card) => card.classList.add("is-visible"));
+    return;
+  }
+
+  if (!("IntersectionObserver" in window)) {
+    p3CriteriaCards.forEach((card) => card.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        }
+      });
+    },
+    { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
+  );
+
+  p3CriteriaCards.forEach((card) => observer.observe(card));
+}
+
+initP3CriteriaReveal();
